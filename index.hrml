@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Toán Vui - Tiểu Học</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-yellow-100 font-sans">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-1/5 bg-blue-200 p-4 h-full overflow-y-auto">
+            <h2 class="text-xl font-bold text-center mb-4">Menu</h2>
+            <ul class="space-y-2">
+                <li><a href="#class" class="block p-2 bg-blue-300 rounded hover:bg-blue-400">Chọn lớp</a></li>
+                <li><a href="#review" class="block p-2 bg-blue-300 rounded hover:bg-blue-400">Bài học ôn tập</a></li>
+                <li><a href="#game" class="block p-2 bg-blue-300 rounded hover:bg-blue-400">Trò chơi đố vui</a></li>
+                <li><a href="#flowers" class="block p-2 bg-blue-300 rounded hover:bg-blue-400">Bông hoa của bé</a></li>
+                <li id="logout" class="block p-2 bg-red-300 rounded hover:bg-red-400 text-center cursor-pointer">Đăng xuất</li>
+            </ul>
+        </div>
+        <!-- Nội dung chính -->
+        <div class="w-4/5 p-4">
+            <h1 class="text-3xl font-bold text-blue-600 text-center mb-4">Học Toán Vui - Tiểu Học</h1>
+            <div id="userInfo" class="text-center mb-4"></div>
+            <div id="content" class="bg-white p-6 rounded shadow"></div>
+        </div>
+    </div>
+    <canvas id="fireworks" class="absolute top-0 left-0 w-full h-full pointer-events-none"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
