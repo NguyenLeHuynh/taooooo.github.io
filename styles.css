@@ -1,0 +1,55 @@
+.draggable {
+    cursor: move;
+    user-select: none;
+    touch-action: none;
+}
+
+.dropzone {
+    border: 2px dashed #4a90e2;
+    padding: 20px;
+    min-height: 50px;
+    background: #f0f8ff;
+    transition: all 0.3s;
+}
+
+.dropzone.dragover {
+    background: #e6f3ff;
+    border-color: #2e6da4;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.game-cell {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    background: #fff;
+    transition: transform 0.3s;
+}
+
+.game-cell:hover {
+    transform: scale(1.1);
+}
+
+.game-cell.correct {
+    background: #d4edda;
+}
+
+.game-cell.wrong {
+    background: #f8d7da;
+}
+
+#fireworks {
+    z-index: 10;
+}
+
+.flower, .gift {
+    width: 50px;
+    height: 50px;
+}
